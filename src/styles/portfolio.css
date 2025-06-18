@@ -1,0 +1,40 @@
+/* Button: primary background by default, left-to-right secondary fill on hover */
+.view-portfolio-animate {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: var(--color-primary, #6366f1); /* Primary color */
+  color: #fff;
+  transition: color 0.2s;
+}
+
+.view-portfolio-animate::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: var(--color-secondary, #facc15); /* Secondary color */
+  z-index: 1;
+  transition: width 1s cubic-bezier(.4,2,.5,1);
+  pointer-events: none;
+}
+
+.view-portfolio-animate span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.2s;
+}
+
+/* Animate secondary color fill on hover */
+.view-portfolio-animate:hover::before,
+.view-portfolio-animate:focus::before {
+  width: 100%;
+}
+
+/* Keep text color white on hover */
+/* .view-portfolio-animate:hover span,
+.view-portfolio-animate:focus span {
+  color: #222;
+} */

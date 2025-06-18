@@ -1,0 +1,86 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isAdmin() {
+      return isAuthenticated() && 
+        get(/databases/$(database)/documents/users/admin).data.uid == request.auth.uid;
+    }
+    
+    function isValidMessage() {
+      return request.resource.data.keys().hasAll([
+        'senderName', 'senderEmail', 'subject', 'message', 'createdAt', 'isRead', 'lastUpdated'
+      ]) &&
+      request.resource.data.senderName is string &&
+      request.resource.data.senderEmail is string &&
+      request.resource.data.subject is string &&
+      request.resource.data.message is string &&
+      request.resource.data.createdAt is timestamp &&
+      request.resource.data.isRead is bool &&
+      request.resource.data.lastUpdated is timestamp;
+    }
+    
+    function isValidNotification() {
+      return request.resource.data.keys().hasAll([
+        'type', 'title', 'description', 'createdAt', 'isRead'
+      ]) &&
+      request.resource.data.type in ['message', 'file', 'system'] &&
+      request.resource.data.title is string &&
+      request.resource.data.description is string &&
+      request.resource.data.createdAt is timestamp &&
+      request.resource.data.isRead is bool;
+    }
+
+    // Users Collection
+    match /users/{userId} {
+      // Anyone can create admin user initially
+      allow create: if true;
+      
+      // Only authenticated users can read user data
+      allow read: if isAuthenticated();
+      
+      // Only admin can update and delete user data
+      allow update, delete: if isAdmin();
+    }
+
+    // Messages Collection
+    match /messages/{messageId} {
+      // Anyone can create messages (for contact form)
+      allow create: if isValidMessage();
+      
+      // Only authenticated users can read messages
+      allow read: if isAuthenticated();
+      
+      // Only authenticated users can delete messages
+      allow delete: if isAuthenticated();
+      
+      // Only authenticated users can update isRead and lastUpdated fields
+      allow update: if isAuthenticated() && 
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['isRead', 'lastUpdated']) &&
+        request.resource.data.isRead is bool &&
+        request.resource.data.lastUpdated is timestamp;
+    }
+
+    // Notifications Collection
+    match /notifications/{notificationId} {
+      // Only authenticated users can read notifications
+      allow read: if isAuthenticated();
+      
+      // Only authenticated users can create notifications
+      allow create: if isAuthenticated() && isValidNotification();
+      
+      // Only authenticated users can update their own notifications
+      allow update: if isAuthenticated() && 
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['isRead']) &&
+        request.resource.data.isRead is bool;
+      
+      // Only authenticated users can delete notifications
+      allow delete: if isAuthenticated();
+    }
+  }
+}

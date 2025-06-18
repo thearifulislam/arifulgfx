@@ -1,0 +1,461 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #264734;
+    --color-secondary: #F6A300;
+
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 144 32% 22%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 41 100% 48%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 25 100% 75%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 144 32% 22%;
+
+    --radius: 1.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* New warm colors */
+    --pink-light: 351 100% 86%;
+    --blue-soft: 197 71% 73%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+    color-scheme: light;
+    -webkit-filter: none !important;
+    filter: none !important;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-filter: none !important;
+    filter: none !important;
+  }
+
+  .theme-color-primary {
+    color: var(--color-primary);
+  }
+
+  .theme-bg-primary {
+    background-color: var(--color-primary);
+  }
+
+  .theme-color-secondary {
+    color: var(--color-secondary);
+  }
+
+  .theme-bg-secondary {
+    background-color: var(--color-secondary);
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 px-4 md:px-8 max-w-7xl mx-auto;
+  }
+
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .blob-shape {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  /* Adding styles for portfolio details page */
+  .prose {
+    @apply max-w-none text-base leading-7;
+  }
+  
+  .prose h2 {
+    @apply text-2xl font-bold mt-12 mb-6 theme-color-primary;
+  }
+  
+  .prose h3 {
+    @apply text-xl font-semibold mt-8 mb-4;
+  }
+  
+  .prose p {
+    @apply mb-6 text-muted-foreground;
+  }
+  
+  .prose ul {
+    @apply list-disc pl-6 mb-6;
+  }
+  
+  .prose li {
+    @apply mb-2 text-muted-foreground;
+  }
+
+  @keyframes floating-heart {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-40px) scale(1.2);
+    }
+    100% {
+      transform: translateY(-80px) scale(1);
+      opacity: 0;
+    }
+  }
+
+  .heart-animation {
+    position: absolute;
+    animation: floating-heart 2s ease-out forwards;
+  }
+
+  .warm-gradient {
+    background: linear-gradient(120deg, #FFB6C1 0%, #87CEEB 100%);
+  }
+
+  /* Navbar animations */
+  .nav-item {
+    position: relative;
+  }
+  
+  .nav-item:after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-secondary);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-item:hover:after {
+    width: 100%;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .heart-bounce {
+    animation: bounce 1s ease infinite;
+  }
+  
+  /* Number counter animation */
+  .counter-animate {
+    counter-reset: count 0;
+    animation: count-up 2s forwards;
+  }
+  
+  @keyframes count-up {
+    from {
+      counter-increment: count 0;
+    }
+    to {
+      counter-increment: count var(--num-target);
+    }
+  }
+  
+  .counter-animate::after {
+    content: counter(count);
+  }
+  
+  /* Portfolio card hover effects */
+  .portfolio-card {
+    overflow: hidden;
+  }
+  
+  .portfolio-card img {
+    transition: transform 0.6s ease;
+  }
+  
+  .portfolio-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .portfolio-card .view-button {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+  }
+  
+  .portfolio-card:hover .view-button {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Hero section animations */
+  @keyframes floating {
+    0% { transform: translateY(0) rotate(0deg); opacity: 0.6; }
+    50% { transform: translateY(-20px) rotate(5deg); opacity: 1; }
+    100% { transform: translateY(0) rotate(0deg); opacity: 0.6; }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.8; }
+  }
+  
+  @keyframes orbit {
+    from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
+    to { transform: rotate(360deg) translateX(70px) rotate(-360deg); }
+  }
+  
+  /* Rotating element animation */
+  .rotate-animation {
+    animation: rotation 10s linear infinite;
+  }
+  
+  @keyframes rotation {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Color switching animation */
+  .color-switch {
+    transition: all 0.3s ease;
+  }
+  
+  /* Portfolio related projects slider */
+  .related-slider {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider-container {
+    display: flex;
+    animation: slide 20s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+}
+
+@layer utilities {
+  /* Custom utilities for CSS variables with opacity */
+  .bg-secondary-20 {
+    background-color: rgba(var(--color-secondary), 0.2);
+  }
+  
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+
+  /* SearchBar and filter styles */
+  .filter-item {
+    @apply px-3 py-1 rounded-md text-sm transition-all duration-200;
+  }
+  
+  .filter-item:hover, .filter-item.active {
+    @apply bg-secondary-20 text-secondary;
+  }
+  
+  /* Background animations for hero and about */
+  .animated-bg {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.2;
+    z-index: 0;
+    animation: float-around 15s ease-in-out infinite alternate;
+  }
+  
+  @keyframes float-around {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(20px, -20px) scale(1.1); }
+    100% { transform: translate(-20px, 20px) scale(0.9); }
+  }
+  
+  /* Intro logo animation */
+  @keyframes progress {
+    0% { width: 0%; }
+    100% { width: 100%; }
+  }
+  
+  /* WhatsApp button animation */
+  .whatsapp-pulse {
+    animation: whatsapp-pulse 2s infinite;
+  }
+  
+  @keyframes whatsapp-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+  }
+  
+  /* Nav items animation */
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .nav-item-animation {
+    animation: slideInFromRight 0.5s forwards;
+  }
+  
+  /* Hire me button animation */
+  .hire-me-btn {
+    transition: all 0.3s ease;
+  }
+  
+  .hire-me-btn:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Service cards */
+  .service-card {
+    transition: all 0.3s ease;
+    height: 100%;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@keyframes heroBlobZoom {
+  from { transform: scale(1);}
+  50% { transform: scale(1.15);}
+  to   { transform: scale(0.95);}
+}
+
+/* Allow text selection only in input fields and textareas */
+input, textarea {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+/* Hide source code from browser dev tools */
+@media screen {
+  * {
+    -webkit-filter: none !important;
+    filter: none !important;
+  }
+}
+
+/* Disable view source */
+html {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+/* Prevent inspect element */
+body {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
