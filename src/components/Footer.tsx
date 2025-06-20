@@ -19,7 +19,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative overflow-hidden">
+    <footer className="relative overflow-hidden mt-12">
       {/* Background with diagonal split and gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-indigo-800 to-rose-500 transform -skew-y-6 origin-top-left scale-110"></div>
       
