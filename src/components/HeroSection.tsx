@@ -23,35 +23,7 @@ const HeroSection = () => {
           transition={{ duration: 0.4 }}
           className="flex justify-between items-center mb-16"
         >
-          <div className="flex items-center gap-2">
-            <div className="h-2 w-2 bg-green-500 rounded-full animate-pulse" />
-            <span className="text-sm font-medium text-gray-600">Open to Work</span>
-          </div>
           <div className="flex items-center gap-4">
-            <motion.a 
-              whileHover={{ scale: 1.1 }}
-              href="https://github.com/yourusername" 
-              target="_blank" 
-              className="text-gray-600 hover:text-gray-900"
-            >
-              <Github size={18} />
-            </motion.a>
-            <motion.a 
-              whileHover={{ scale: 1.1 }}
-              href="https://linkedin.com/in/yourusername" 
-              target="_blank" 
-              className="text-gray-600 hover:text-gray-900"
-            >
-              <Linkedin size={18} />
-            </motion.a>
-            <motion.a 
-              whileHover={{ scale: 1.1 }}
-              href="https://twitter.com/yourusername" 
-              target="_blank" 
-              className="text-gray-600 hover:text-gray-900"
-            >
-              <Twitter size={18} />
-            </motion.a>
           </div>
         </motion.div>
 

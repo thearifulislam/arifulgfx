@@ -237,7 +237,297 @@ const serviceData = {
       },
     ],
   },
-  // ...other services (not shown for brevity)
+
+  "ui-ux-design": {
+    icon: (
+      <Smartphone className="h-14 w-14 theme-color-secondary drop-shadow-xl" />
+    ),
+    coverText: "UI/UX Design",
+    title: "User Experience & Interface Design",
+    tagline: "Intuitive. Engaging. User-centered digital experiences.",
+    description:
+      "I create user-centered digital experiences that combine beautiful aesthetics with seamless functionality. From wireframes to high-fidelity prototypes, I design interfaces that users love to interact with, ensuring your digital products are both visually appealing and highly functional.",
+    process: [
+      {
+        icon: <Sparkle className="h-7 w-7 text-blue-400" />,
+        title: "User Research",
+        desc: "Understand your users, their needs, and pain points through research and analysis.",
+      },
+      {
+        icon: <Sparkle className="h-7 w-7 text-blue-400" />,
+        title: "Information Architecture",
+        desc: "Structure content and navigation for optimal user flow and findability.",
+      },
+      {
+        icon: <Sparkle className="h-7 w-7 text-blue-400" />,
+        title: "Wireframing & Prototyping",
+        desc: "Create low and high-fidelity prototypes to test and refine user flows.",
+      },
+      {
+        icon: <Sparkle className="h-7 w-7 text-blue-400" />,
+        title: "Visual Design",
+        desc: "Apply brand colors, typography, and visual elements to create engaging interfaces.",
+      },
+      {
+        icon: <Sparkle className="h-7 w-7 text-blue-400" />,
+        title: "User Testing & Iteration",
+        desc: "Test with real users and refine based on feedback for optimal experience.",
+      },
+    ],
+    features: [
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "User-Centered Design",
+      },
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "Responsive Design",
+      },
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "Interactive Prototypes",
+      },
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "Accessibility Compliance",
+      },
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "Design Systems",
+      },
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "User Testing Reports",
+      },
+    ],
+    subServices: [
+      "Website UI/UX Design",
+      "Mobile App Design",
+      "Dashboard & Admin Panels",
+      "E-commerce UX",
+      "Landing Page Design",
+      "Design Systems & Style Guides",
+    ],
+    deliverables: [
+      "User Research Report",
+      "Wireframes & User Flows",
+      "High-Fidelity Mockups",
+      "Interactive Prototypes",
+      "Design System Documentation",
+      "User Testing Results",
+    ],
+    timeframe: "2-4 weeks",
+    portfolios: [
+      {
+        id: "momentum-clothing-brand-for-men",
+        title: "Momentum Menswear – Modern & Stylish Clothing for Men",
+        tags: ["UI/UX", "E-commerce"],
+        image: momentum,
+      },
+      {
+        id: "blood-donation-logo-design",
+        title: "Blood Donation App Design",
+        tags: ["UI/UX", "Mobile App"],
+        image: blooddonation,
+      },
+    ],
+  },
+
+  "web-development": {
+    icon: (
+      <Smartphone className="h-14 w-14 theme-color-secondary drop-shadow-xl" />
+    ),
+    coverText: "Web Development",
+    title: "Custom Web Development",
+    tagline: "Modern. Fast. Scalable web solutions.",
+    description:
+      "I build custom websites and web applications using cutting-edge technologies and best practices. From simple landing pages to complex web applications, I create fast, secure, and scalable solutions that help your business grow online.",
+    process: [
+      {
+        icon: <Sparkle className="h-7 w-7 text-blue-400" />,
+        title: "Requirements Analysis",
+        desc: "Define project scope, features, and technical requirements.",
+      },
+      {
+        icon: <Sparkle className="h-7 w-7 text-blue-400" />,
+        title: "Architecture Planning",
+        desc: "Design system architecture and choose optimal technologies.",
+      },
+      {
+        icon: <Sparkle className="h-7 w-7 text-blue-400" />,
+        title: "Development & Testing",
+        desc: "Build features with regular testing and quality assurance.",
+      },
+      {
+        icon: <Sparkle className="h-7 w-7 text-blue-400" />,
+        title: "Deployment & Launch",
+        desc: "Deploy to production with monitoring and optimization.",
+      },
+      {
+        icon: <Sparkle className="h-7 w-7 text-blue-400" />,
+        title: "Maintenance & Support",
+        desc: "Provide ongoing maintenance, updates, and technical support.",
+      },
+    ],
+    features: [
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "Modern Technologies",
+      },
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "Responsive Design",
+      },
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "SEO Optimization",
+      },
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "Security Best Practices",
+      },
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "Performance Optimization",
+      },
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "Ongoing Support",
+      },
+    ],
+    subServices: [
+      "Custom Website Development",
+      "E-commerce Solutions",
+      "Web Applications",
+      "API Development",
+      "Website Maintenance",
+      "Performance Optimization",
+    ],
+    deliverables: [
+      "Fully Functional Website",
+      "Source Code & Documentation",
+      "Deployment Instructions",
+      "SEO Optimization",
+      "Security Implementation",
+      "Training & Support",
+    ],
+    timeframe: "4-8 weeks",
+    portfolios: [
+      {
+        id: "modern-minimalist-camera-business-card",
+        title: "Modern E-commerce Platform",
+        tags: ["Web Development", "E-commerce"],
+        image: modernminimalistcamerabusinesscard,
+      },
+      {
+        id: "modern-business-card-design",
+        title: "Corporate Website",
+        tags: ["Web Development", "Corporate"],
+        image: modernbusinesscard,
+      },
+    ],
+  },
+
+  "brand-design": {
+    icon: (
+      <Smartphone className="h-14 w-14 theme-color-secondary drop-shadow-xl" />
+    ),
+    coverText: "Brand Design",
+    title: "Complete Brand Identity Design",
+    tagline: "Cohesive. Memorable. Powerful brand experiences.",
+    description:
+      "I create comprehensive brand identities that tell your story and connect with your audience. From logo design to complete brand guidelines, I develop visual systems that are consistent, memorable, and aligned with your business goals.",
+    process: [
+      {
+        icon: <Sparkle className="h-7 w-7 text-blue-400" />,
+        title: "Brand Discovery",
+        desc: "Understand your business, values, target audience, and competitive landscape.",
+      },
+      {
+        icon: <Sparkle className="h-7 w-7 text-blue-400" />,
+        title: "Strategy Development",
+        desc: "Define brand positioning, personality, and visual direction.",
+      },
+      {
+        icon: <Sparkle className="h-7 w-7 text-blue-400" />,
+        title: "Visual Identity Creation",
+        desc: "Design logo, color palette, typography, and visual elements.",
+      },
+      {
+        icon: <Sparkle className="h-7 w-7 text-blue-400" />,
+        title: "Brand Applications",
+        desc: "Apply brand identity across various touchpoints and materials.",
+      },
+      {
+        icon: <Sparkle className="h-7 w-7 text-blue-400" />,
+        title: "Guidelines & Delivery",
+        desc: "Create comprehensive brand guidelines and deliver all assets.",
+      },
+    ],
+    features: [
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "Strategic Brand Positioning",
+      },
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "Complete Visual Identity",
+      },
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "Brand Guidelines",
+      },
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "Multi-Platform Consistency",
+      },
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "Scalable Design System",
+      },
+      {
+        icon: <Rocket className="h-6 w-6 text-green-500" />,
+        label: "Ongoing Brand Support",
+      },
+    ],
+    subServices: [
+      "Logo Design & Variations",
+      "Color Palette & Typography",
+      "Brand Guidelines",
+      "Business Card Design",
+      "Letterhead & Stationery",
+      "Digital Brand Assets",
+    ],
+    deliverables: [
+      "Primary & Secondary Logos",
+      "Complete Brand Guidelines",
+      "Color Palette & Typography",
+      "Business Card & Stationery",
+      "Digital Asset Kit",
+      "Brand Application Examples",
+    ],
+    timeframe: "3-6 weeks",
+    portfolios: [
+      {
+        id: "momentum-clothing-brand-for-men",
+        title: "Momentum Menswear Brand Identity",
+        tags: ["Brand Design", "Fashion"],
+        image: momentum,
+      },
+      {
+        id: "blood-donation-logo-design",
+        title: "Blood Donation Brand Identity",
+        tags: ["Brand Design", "Healthcare"],
+        image: blooddonation,
+      },
+      {
+        id: "ranova-brand-guidelines",
+        title: "Ranova Complete Brand Identity",
+        tags: ["Brand Design", "Guidelines"],
+        image: ranova,
+      },
+    ],
+  },
 
   "business-card-design": {
     icon: (
@@ -1395,143 +1685,60 @@ const ServiceDetails = () => {
 
   if (!service) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 via-slate-100 to-gray-200">
         <Navbar />
         <div className="container mx-auto px-4 md:px-8 pt-32 pb-20">
           <div className="max-w-2xl mx-auto text-center">
             <div className="mb-12">
-              <div className="inline-block p-4 bg-[var(--color-secondary)]/10 rounded-full mb-6">
-                <RefreshCw className="h-14 w-14 theme-color-secondary drop-shadow-xl" />
+              <div className="inline-block p-6 bg-gradient-to-br from-[#1f2937] to-[#374151] rounded-3xl mb-8 shadow-xl">
+                <RefreshCw className="h-16 w-16 text-white drop-shadow-lg" />
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-[#1f2937] to-[#4b5563] bg-clip-text text-transparent">
                 Service Not Found
               </h1>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-gray-600 leading-relaxed">
                 We couldn't find the service you're looking for. Please try refreshing the page or return to our services.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button
                 onClick={() => window.location.reload()}
-                className="group inline-flex items-center justify-center px-8 py-4 bg-[var(--color-secondary)] text-white rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
+                className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#1f2937] to-[#374151] text-white rounded-2xl font-semibold hover:from-[#111827] hover:to-[#1f2937] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
-                <RefreshCw className="h-5 w-5 mr-2 group-hover:animate-spin" />
+                <RefreshCw className="h-5 w-5 mr-3 group-hover:animate-spin" />
                 Refresh Page
               </button>
               
               <Link
                 to="/services"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-[var(--color-secondary)] text-[var(--color-secondary)] rounded-full font-medium hover:bg-[var(--color-secondary)] hover:text-white transition-all duration-300"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#1f2937] text-[#1f2937] rounded-2xl font-semibold hover:bg-[#1f2937] hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
-                <ArrowLeft className="h-5 w-5 mr-2" />
+                <ArrowLeft className="h-5 w-5 mr-3" />
                 Back to Services
               </Link>
             </div>
           </div>
         </div>
 
-        {/* Available Services Section - Full Width */}
-        <div className="w-full bg-white mt-12 py-12">
+        {/* Available Services Section */}
+        <div className="w-full bg-white/80 backdrop-blur-sm mt-12 py-16">
           <div className="container mx-auto px-4 md:px-8">
-            <h2 className="text-2xl font-semibold mb-8 text-center">Available Services</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
-              <Link
-                to="/services/business-card-design"
-                className="p-4 bg-[#f9f9f9] rounded-2xl transition-all duration-300 border border-gray-100 hover:border-[var(--color-secondary)]"
-              >
-                Business Card Design
-              </Link>
-              <Link
-                to="/services/logo-design"
-                className="p-4 bg-[#f9f9f9] rounded-2xl transition-all duration-300 border border-gray-100 hover:border-[var(--color-secondary)]"
-              >
-                Logo Design
-              </Link>
-              <Link
-                to="/services/brand-identity"
-                className="p-4 bg-[#f9f9f9] rounded-2xl transition-all duration-300 border border-gray-100 hover:border-[var(--color-secondary)]"
-              >
-                Brand Identity
-              </Link>
-              <Link
-                to="/services/social-media"
-                className="p-4 bg-[#f9f9f9] rounded-2xl transition-all duration-300 border border-gray-100 hover:border-[var(--color-secondary)]"
-              >
-                Social Media Design
-              </Link>
-              <Link
-                to="/services/letterhead-design"
-                className="p-4 bg-[#f9f9f9] rounded-2xl transition-all duration-300 border border-gray-100 hover:border-[var(--color-secondary)]"
-              >
-                Letterhead Design
-              </Link>
-              <Link
-                to="/services/brand-guidelines-design"
-                className="p-4 bg-[#f9f9f9] rounded-2xl transition-all duration-300 border border-gray-100 hover:border-[var(--color-secondary)]"
-              >
-                Brand Guidelines
-              </Link>
-              <Link
-                to="/services/image-editing"
-                className="p-4 bg-[#f9f9f9] rounded-2xl transition-all duration-300 border border-gray-100 hover:border-[var(--color-secondary)]"
-              >
-                Image Editing
-              </Link>
-              <Link
-                to="/services/background-removal"
-                className="p-4 bg-[#f9f9f9] rounded-2xl transition-all duration-300 border border-gray-100 hover:border-[var(--color-secondary)]"
-              >
-                Background Removal
-              </Link>
-              <Link
-                to="/services/social-media-post-design"
-                className="p-4 bg-[#f9f9f9] rounded-2xl transition-all duration-300 border border-gray-100 hover:border-[var(--color-secondary)]"
-              >
-                Social Media Post Design
-              </Link>
-              <Link
-                to="/services/banner-design"
-                className="p-4 bg-[#f9f9f9] rounded-2xl transition-all duration-300 border border-gray-100 hover:border-[var(--color-secondary)]"
-              >
-                Banner Design
-              </Link>
-              <Link
-                to="/services/web-banner-design"
-                className="p-4 bg-[#f9f9f9] rounded-2xl transition-all duration-300 border border-gray-100 hover:border-[var(--color-secondary)]"
-              >
-                Web Banner Design
-              </Link>
-              <Link
-                to="/services/email-signature-design"
-                className="p-4 bg-[#f9f9f9] rounded-2xl transition-all duration-300 border border-gray-100 hover:border-[var(--color-secondary)]"
-              >
-                Email Signature Design
-              </Link>
-              <Link
-                to="/services/flyer-design"
-                className="p-4 bg-[#f9f9f9] rounded-2xl transition-all duration-300 border border-gray-100 hover:border-[var(--color-secondary)]"
-              >
-                Flyer Design
-              </Link>
-              <Link
-                to="/services/billboard-design"
-                className="p-4 bg-[#f9f9f9] rounded-2xl transition-all duration-300 border border-gray-100 hover:border-[var(--color-secondary)]"
-              >
-                Billboard Design
-              </Link>
-              <Link
-                to="/services/stationery-design"
-                className="p-4 bg-[#f9f9f9] rounded-2xl transition-all duration-300 border border-gray-100 hover:border-[var(--color-secondary)]"
-              >
-                Stationery Design
-              </Link>
-              <Link
-                to="/services/resume-design"
-                className="p-4 bg-[#f9f9f9] rounded-2xl transition-all duration-300 border border-gray-100 hover:border-[var(--color-secondary)]"
-              >
-                Resume Design
-              </Link>
+            <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-[#1f2937] to-[#4b5563] bg-clip-text text-transparent">
+              Available Services
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {Object.keys(serviceData).map((key) => (
+                <Link
+                  key={key}
+                  to={`/services/${key}`}
+                  className="group p-6 bg-white/60 backdrop-blur-sm rounded-2xl transition-all duration-300 border border-gray-200 hover:border-[#1f2937] hover:bg-white/80 shadow-lg hover:shadow-xl transform hover:-translate-y-2"
+                >
+                  <div className="text-lg font-semibold text-gray-800 group-hover:text-[#1f2937] transition-colors">
+                    {serviceData[key as keyof typeof serviceData].coverText}
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </div>
@@ -1541,42 +1748,45 @@ const ServiceDetails = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-slate-100 to-gray-200">
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="max-w-4xl mx-auto">
+      <section className="pt-32 pb-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1f2937]/10 to-[#374151]/10"></div>
+        <div className="container mx-auto px-4 md:px-8 relative z-10">
+          <div className="max-w-6xl mx-auto">
             <Link
               to="/services"
-              className="inline-flex items-center text-gray-600 hover:text-[var(--color-secondary)] transition-colors duration-300 mb-8 group"
+              className="inline-flex items-center text-gray-600 hover:text-[#1f2937] transition-colors duration-300 mb-8 group"
             >
-              <ArrowLeft className="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform" />
-              Back to Services
+              <ArrowLeft className="h-5 w-5 mr-3 group-hover:-translate-x-1 transition-transform" />
+              <span className="font-medium">Back to Services</span>
             </Link>
             
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
-              <div className="flex flex-col md:flex-row items-start gap-8">
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-12 mb-16 border border-white/20">
+              <div className="flex flex-col lg:flex-row items-center gap-12">
                 <div className="flex-shrink-0">
-                  <div className="p-6 bg-[var(--color-secondary)]/5 rounded-xl">
-                    {service.icon}
+                  <div className="p-8 bg-gradient-to-br from-[#1f2937] to-[#374151] rounded-3xl shadow-xl">
+                    <div className="text-white">
+                      {service.icon}
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <div className="text-sm font-bold text-[var(--color-secondary)] uppercase tracking-widest mb-2">
+                <div className="flex-1 text-center lg:text-left">
+                  <div className="inline-block px-4 py-2 bg-gradient-to-r from-[#1f2937] to-[#374151] text-white text-sm font-bold uppercase tracking-widest rounded-full mb-6 shadow-lg">
                     {service.coverText}
                   </div>
-                  <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                  <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                     {service.title}
                   </h1>
-                  <p className="text-xl text-gray-600 mb-6">
+                  <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
                     {service.tagline}
                   </p>
-                  <div className="flex items-center gap-4 text-sm">
-                    <div className="flex items-center gap-2 bg-[var(--color-secondary)]/5 px-4 py-2 rounded-full">
-                      <Clock className="w-4 h-4 text-[var(--color-secondary)]" />
-                      <span className="font-medium text-gray-700">Timeline: {service.timeframe}</span>
+                  <div className="flex flex-wrap items-center gap-4 justify-center lg:justify-start">
+                    <div className="flex items-center gap-3 bg-white/60 backdrop-blur-sm px-6 py-3 rounded-2xl shadow-lg">
+                      <Clock className="w-5 h-5 text-[#1f2937]" />
+                      <span className="font-semibold text-gray-800">Timeline: {service.timeframe}</span>
                     </div>
                   </div>
                 </div>
@@ -1586,90 +1796,143 @@ const ServiceDetails = () => {
         </div>
       </section>
 
-      {/* Main Content */}
+      {/* Description Section */}
       <section className="py-20">
         <div className="container mx-auto px-4 md:px-8">
           <div className="max-w-4xl mx-auto">
-            {/* Description */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">About This Service</h2>
-              <p className="text-gray-600 leading-relaxed">
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-12 mb-16 border border-white/20">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+                About This Service
+              </h2>
+              <p className="text-lg text-gray-600 leading-relaxed text-center">
                 {service.description}
               </p>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Features Grid */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
-              <h2 className="text-2xl font-bold text-gray-900 mb-8">Key Features</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {service.features.map((feature, i) => (
-                  <div
-                    key={i}
-                    className="flex items-start gap-4 p-6 bg-[#fafaff] rounded-xl hover:bg-[var(--color-secondary)]/5 transition-all duration-300"
-                  >
-                    <div className="flex-shrink-0 p-3 bg-[var(--color-secondary)]/5 rounded-lg">
-                      {feature.icon}
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-gray-900">{feature.label}</h3>
-                    </div>
-                  </div>
-                ))}
-              </div>
+      {/* Features Grid */}
+      <section className="py-20">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                Key Features
+              </h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                Discover what makes our service exceptional
+              </p>
             </div>
-
-            {/* Process Steps */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
-              <h2 className="text-2xl font-bold text-gray-900 mb-8">Our Process</h2>
-              <div className="space-y-6">
-                {service.process.map((step, idx) => (
-                  <div
-                    key={idx}
-                    className="flex gap-6 p-6 bg-[#fafaff] rounded-xl hover:bg-[var(--color-secondary)]/5 transition-all duration-300"
-                  >
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 flex items-center justify-center bg-[var(--color-secondary)]/5 rounded-full">
-                        {step.icon}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {service.features.map((feature, i) => (
+                <div
+                  key={i}
+                  className="group bg-white/80 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl border border-white/20 transform hover:-translate-y-2"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 p-4 bg-gradient-to-br from-[#1f2937] to-[#374151] rounded-2xl shadow-lg">
+                      <div className="text-white">
+                        {feature.icon}
                       </div>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 mb-2">{step.title}</h3>
-                      <p className="text-gray-600">{step.desc}</p>
+                      <h3 className="font-bold text-gray-900 text-lg mb-2">{feature.label}</h3>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Sub Services */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
-              <h2 className="text-2xl font-bold text-gray-900 mb-8">What We Offer</h2>
-              <div className="flex flex-wrap gap-3">
+      {/* Process Steps */}
+      <section className="py-20">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                Our Process
+              </h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                A systematic approach to delivering exceptional results
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {service.process.map((step, idx) => (
+                <div
+                  key={idx}
+                  className="group bg-white/80 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl border border-white/20 transform hover:-translate-y-2"
+                >
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-[#1f2937] to-[#374151] rounded-2xl mb-6 shadow-lg">
+                      <div className="text-white">
+                        {step.icon}
+                      </div>
+                    </div>
+                    <div className="mb-4">
+                      <span className="inline-block w-8 h-8 bg-gradient-to-r from-[#1f2937] to-[#374151] text-white text-sm font-bold rounded-full flex items-center justify-center">
+                        {idx + 1}
+                      </span>
+                    </div>
+                    <h3 className="font-bold text-gray-900 text-xl mb-4">{step.title}</h3>
+                    <p className="text-gray-600 leading-relaxed">{step.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sub Services */}
+      <section className="py-20">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-12 border border-white/20">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+                What We Offer
+              </h2>
+              <div className="flex flex-wrap gap-4 justify-center">
                 {service.subServices.map((sub, idx) => (
                   <span
                     key={idx}
-                    className="px-4 py-2 bg-[#fafaff] text-gray-700 rounded-full text-sm font-medium hover:bg-[var(--color-secondary)]/5 transition-all duration-300"
+                    className="px-6 py-3 bg-gradient-to-r from-[#1f2937] to-[#374151] text-white rounded-2xl text-sm font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
                   >
                     {sub}
                   </span>
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Deliverables */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
-              <h2 className="text-2xl font-bold text-gray-900 mb-8">Deliverables</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {service.deliverables.map((d, i) => (
-                  <div
-                    key={i}
-                    className="flex items-center gap-3 p-4 bg-[#fafaff] rounded-xl hover:bg-[var(--color-secondary)]/5 transition-all duration-300"
-                  >
-                    <Check className="w-5 h-5 text-[var(--color-secondary)]" />
-                    <span className="text-gray-700">{d}</span>
+      {/* Deliverables */}
+      <section className="py-20">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                Deliverables
+              </h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                Everything you'll receive when working with us
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {service.deliverables.map((d, i) => (
+                <div
+                  key={i}
+                  className="flex items-center gap-4 p-6 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20 hover:bg-white/90 transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#059669] to-[#047857] rounded-2xl flex items-center justify-center shadow-lg">
+                    <Check className="w-6 h-6 text-white" />
                   </div>
-                ))}
-              </div>
+                  <span className="text-gray-800 font-medium text-lg">{d}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -1677,30 +1940,51 @@ const ServiceDetails = () => {
 
       {/* Portfolio Section */}
       {service.portfolios && service.portfolios.length > 0 && (
-        <section className="py-8 w-full">
-          <div className="w-full px-4 md:px-8">
-            <div className="w-full">
-              <div className="text-center mb-8">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+        <section className="py-20">
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl font-bold text-gray-900 mb-4">
                   Related Projects
                 </h2>
-                <p className="text-gray-600 max-w-2xl mx-auto">
+                <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                   Explore our portfolio of successful projects in this category
                 </p>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {service.portfolios.map((item) => (
                   <Link
                     key={item.id}
                     to={`/projects/${item.id}`}
-                    className="group relative bg-white rounded-2xl overflow-hidden shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-1"
+                    className="group relative bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-white/20"
                   >
-                    <div className="relative h-96 overflow-hidden">
+                    <div className="relative h-64 overflow-hidden">
                       <img
                         src={item.image}
                         alt={item.title}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
+                    </div>
+                    <div className="p-6">
+                      <div className="flex flex-wrap gap-2 mb-3">
+                        {item.tags.map((tag, idx) => (
+                          <span
+                            key={idx}
+                            className="px-3 py-1 bg-gradient-to-r from-[#1f2937] to-[#374151] text-white text-xs font-semibold rounded-full"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      <h3 className="font-bold text-gray-900 text-lg mb-3 group-hover:text-[#1f2937] transition-colors">
+                        {item.title}
+                      </h3>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-500">View Project</span>
+                        <div className="w-8 h-8 bg-gradient-to-r from-[#1f2937] to-[#374151] rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
+                          <ArrowRight className="w-4 h-4 text-white" />
+                        </div>
+                      </div>
                     </div>
                   </Link>
                 ))}
@@ -1714,19 +1998,19 @@ const ServiceDetails = () => {
       <section className="py-20">
         <div className="container mx-auto px-4 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-lg p-12 text-center">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <div className="bg-gradient-to-br from-[#1f2937] to-[#374151] rounded-3xl shadow-2xl p-12 text-center text-white">
+              <h2 className="text-4xl font-bold mb-6">
                 Ready to Get Started?
               </h2>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-xl mb-8 opacity-90">
                 Let's create something amazing together. Contact us today to discuss your project.
               </p>
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 bg-[var(--color-secondary)] text-white rounded-full font-medium hover:bg-opacity-90 transition-all duration-300"
+                className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#1f2937] rounded-2xl font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 Get in Touch
-                <ArrowRight className="w-5 h-5 ml-2" />
+                <ArrowRight className="w-5 h-5 ml-3" />
               </Link>
             </div>
           </div>
